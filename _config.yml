@@ -171,24 +171,28 @@ widgets:
     -
         type: category
         position: left
+
     -
-        type: links
+        type: archive
+        position: right
+
+
+    -
+    type: links
+    position: right
+    links:
+        Kinetic Blog: https://kinetic.github.io/
+        Kinetic Github: https://github.com/Kinetic27
+
+    -
+        type: tag
         position: left
-        links:
-            Kinetic Blog: https://kinetic.github.io/
-            Kinetic Github: https://github.com/Kinetic27
     -
         type: recent_posts
         position: right
     -
-        type: archive
-        position: right
-    -
         type: tagcloud
         position: right
-    # -
-    #     type: tag
-    #     position: right
 
 # Other plugin settings
 plugins:
@@ -210,7 +214,7 @@ plugins:
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
     google-analytics:
         # Google Analytics tracking id
-        tracking_id: 트랙킹
+        tracking_id: 
     # Baidu Analytics plugin settings
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
     baidu-analytics:
