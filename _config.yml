@@ -186,9 +186,9 @@ widgets:
     -
         type: tagcloud
         position: right
-    # -
-    #     type: tag
-    #     position: right
+    #-
+    #    type: tag
+    #    position: right
 
 # Other plugin settings
 plugins:
@@ -210,7 +210,7 @@ plugins:
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
     google-analytics:
         # Google Analytics tracking id
-        tracking_id: 트랙킹
+        tracking_id: 
     # Baidu Analytics plugin settings
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
     baidu-analytics:
