@@ -3,7 +3,7 @@
     <% if (has_thumbnail(post)) { %>
     <div class="card-image">
         <%- index ? '<a href="' + url_for(post.link ? post.link : post.path) + '"' : '<span ' %> class="image is-7by1">
-        <img class="thumbnail" src="<%= get_thumbnail(post) %>" alt="<%= post.title %>">
+            <img class="thumbnail" src="<%= get_thumbnail(post) %>" alt="<%= post.title %>">
         <%- index ? '</a>' : '</span>' %>
     </div>
     <% } %>
@@ -14,7 +14,7 @@
                 <time class="level-item has-text-grey" datetime="<%= date_xml(post.date) %>"><%= date(post.date) %></time>
                 <% if (post.categories && post.categories.length) { %>
                 <div class="level-item">
-                    <%- list_categories(post.categories, {
+                <%- list_categories(post.categories, {
                     class: 'has-link-grey ',
                     show_count: false,
                     style: 'none',
@@ -40,9 +40,9 @@
         <% } %>
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             <% if (index) { %>
-            <a class="has-link-black-ter" href="<%- url_for(post.link ? post.link : post.path) %>"><%= post.title %></a>
+                <a class="has-link-black-ter" href="<%- url_for(post.link ? post.link : post.path) %>"><%= post.title %></a>
             <% } else { %>
-            <%= post.title %>
+                <%= post.title %>
             <% } %>
         </h1>
         <div class="content">
@@ -66,7 +66,7 @@
         <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
-                    <a class="button is-size-7 is-light" href="<%- url_for(post.path) %>#more"><%= __('article.more') %></a>
+                <a class="button is-size-7 is-light" href="<%- url_for(post.path) %>#more"><%= __('article.more') %></a>
                 </div>
             </div>
         </div>
@@ -86,30 +86,19 @@
             <% for (let service of services) {
                 const type = get_config_from_obj(service, 'type');
                 if (type !== null) { %>
-            <%- _partial('donate/' + type, { type, service }) %>
-            <% }
+                <%- _partial('donate/' + type, { type, service }) %>
+                <% }
             } %>
         </div>
     </div>
 </div>
 <% } %>
 
-
-
 <% if (!index && (post.prev || post.next)) { %>
-
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">관련 포스트</h3>
-        <%- popular_posts( {} , post ) %>
-    </div>
-</div>
-
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         <% if (post.prev){ %>
         <div class="level-start">
-
             <a class="level level-item has-link-grey <%= !post.prev ? 'is-hidden-mobile' : '' %> article-nav-prev" href="<%- url_for(post.prev.path) %>">
                 <i class="level-item fas fa-chevron-left"></i>
                 <span class="level-item"><%= post.prev.title %></span>
@@ -123,7 +112,6 @@
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
-
         <% } %>
     </div>
 </div>
