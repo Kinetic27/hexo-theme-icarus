@@ -9,7 +9,9 @@ canonical_url:
 # Path or URL to RSS atom.xml
 rss: /rss2.xml
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
-logo: /images/logo.svg
+logo:
+    light: /images/logo.svg
+    dark: /images/logo-white.svg
 # Open Graph metadata
 # https://hexo.io/docs/helpers.html#open-graph
 open_graph:
@@ -139,7 +141,7 @@ widgets:
         # Author's current location to be shown in the profile widget
         location: South Korea
         # Path or URL to the avatar to be shown in the profile widget
-        avatar:
+        avatar: /images/bio-photo.png
         # Email address for the Gravatar to be shown in the profile widget
         gravatar:
         # Whether to show avatar image rounded or square
@@ -206,11 +208,7 @@ plugins:
     mathjax: true
     # Show the back to top button on mobile devices
     back-to-top: true
-    # Google Analytics plugin settings
-    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
-    google-analytics:
-        # Google Analytics tracking id
-        tracking_id: UA-155063421-1
+
     # Baidu Analytics plugin settings
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
     baidu-analytics:

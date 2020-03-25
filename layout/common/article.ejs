@@ -94,6 +94,15 @@
 </div>
 <% } %>
 
+<% if (!index) { %>
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">추천 포스트</h3>
+        <%- popular_posts( {} , post ) %>
+    </div>
+</div>
+<% } %>
+
 <% if (!index && (post.prev || post.next)) { %>
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">

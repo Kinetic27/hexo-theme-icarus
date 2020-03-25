@@ -30,7 +30,7 @@ const DEFAULT_WIDGETS = [
             },
             RSS: {
                 icon: 'fas fa-rss',
-                url: '/rss2.xml'
+                url: '/'
             }
         }
     },
