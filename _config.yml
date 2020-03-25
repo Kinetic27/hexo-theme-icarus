@@ -208,7 +208,11 @@ plugins:
     mathjax: true
     # Show the back to top button on mobile devices
     back-to-top: true
-
+    # Google Analytics plugin settings
+    # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
+    google-analytics:
+        # Google Analytics tracking id
+        tracking_id: 
     # Baidu Analytics plugin settings
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
     baidu-analytics:
