@@ -3,8 +3,9 @@
 <head>
     <%- _partial('common/head') %>
     <%- _partial('ads/adsense-auto-ads') %>
+    <%- _partial('live2d/load2d') %>
 </head>
-<body class="is-<%= column_count() %>-column">
+<body class="is-<%= column_count() %>-column" scroll=no>
     <!-- night mode -->
     <script type="text/javascript" src="/js/night.js"></script>
     <canvas id="universe"></canvas>
