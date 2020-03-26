@@ -81,7 +81,7 @@
 }
 
 #waifu-tool {
-	color: #fff;
+	color: #aaa;
 	opacity: 0;
 	position: absolute;
 	left: -10px;
@@ -94,7 +94,7 @@
 }
 
 #waifu-tool span {
-	color: #fff;
+	color: #5b6c7d;
 	cursor: pointer;
 	display: block;
 	line-height: 30px;
