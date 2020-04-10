@@ -1,12 +1,12 @@
 /**
  * Icarus 夜间模式 by iMaeGoo
  * https://www.imaegoo.com/
- */ 
+ */
 var isNight = localStorage.getItem('night');
 var nightNav;
 
 function applyNight(value) {
-    if (value.toString() === 'true') {
+    if (value != null && value.toString() === 'true') {
         document.body.classList.add('night');
     } else {
         document.body.classList.remove('night');
